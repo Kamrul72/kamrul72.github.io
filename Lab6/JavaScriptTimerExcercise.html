@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/timer.css" />
+    <title>About Me</title>
+  </head>
+  <body>
+      <h2 > Lab6- JavaScript Timer Excercise </h2>
+    <div class="header_top">
+      <h3>1.What is the difference between the following 2 statements?
+        setTimeout(booyah, 2000);
+        setTimeout(booyah(), 2000);
+        </h3>
+        
+      <p>
+        Ans:The second one is wrong. We should not use parentheses  () ,when passing the function name in the setTimeout.
+        For example var booyah= function(){ alert("Hello");}
+        setTimeout(booyah, 2000); is actually working as below 
+        setTimeout(function(){ alert("Hello");}, 2000);
+        whereas setTimeout(booyah(), 2000); this is not passing var booyah, this is a syntax error .
+         Inside  setTimeout method anonymous function to be passed. Normal function should not be passed to  setTimeout
+                 
+      </p>
+      <hr />
+    </div>
+
+    <div class="next_course">
+      <h3>2.	What do the following 2 alerts display (answer without running the code)?
+        var myfunc = function(a, x) {
+        return a * x;
+        };
+        var x = myfunc(2, 3);
+        var y = myfunc;
+        alert(x);
+        alert(y(2,3));
+        </h3>
+      <p> Ans:After a function has been stored in a variable, the variable can be used as a function,
+        Both will display 6. 
+        
+        </p>
+        <hr />
+    </div>
+
+    <div class="fav_movies">
+      <h3>3.Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2
+           seconds that says “BOOYAH!”
+        setTimeout(booyah1, 2000); setTimeout(booyah2(), 2000);
+        </h3>
+      <p> Ans:
+          function booyah1(){
+        alert("BOOYAH");
+        }
+        function booyah2(){
+        alert("BOOYAH");
+        }
+        setTimeout(booyah1, 2000);
+        setTimeout(function(){booyah2();} , 2000);
+        
+        </p>
+        <hr />
+    </div>
+
+    <div class="moods">
+      <h3>4.	What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons for using it)?</h3>
+      <p>
+        Ans: Unobtrusive JavaScript is the way of writing JavaScript language in which we properly separate Document Content and
+         Script Content thus allowing us to make a clear distinction between them. Just as we should separate our structure 
+         and presentation by putting all CSS in a separate file and eschewing the use of style attributes or other such 
+         presentational markup, we should also separate our HTML structure and JavaScript behavior . So it is basically
+          separating behavior or javascript from presentation or html. This approach is useful in so many ways as it makes
+           our code less error prone, easy to update and to debug.
+           </p>
+     <p>
+        Practical example of using unobtrusive JavaScript is Form validation. 
+        Unobtrusive JavaScript is a way of writing JavaScript so that site visitors are not shut out of the site for one of 
+        these reasons—if JavaScript is not working correctly for them, the user should still be able to use the site
+        
+      </p>
+      <hr />
+    </div>
+
+    
+
+    <div class="footer">
+      <a
+        href="http://validator.w3.org/check?uri=https://kamrul72.github.io/Lab6/JavaScriptTimerExcercise.html"
+        ><img
+          src="images/w3c-html.png"
+          alt="html validator"
+      /></a>
+      <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkamrul72.github.io%2FLab6%2FJavaScriptTimerExcercise.html.html&profile=css3svg&usermedium=all&warning=1&vextwarning="
+        ><img
+          src="images/w3c-css.png"
+          alt="css validator"
+      /></a>
+    </div>
+  </body>
+</html>
