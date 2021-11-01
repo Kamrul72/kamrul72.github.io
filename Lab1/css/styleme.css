@@ -10,6 +10,16 @@ h2 {
   background: greenyellow;
   font-weight: bold;
   font-style: italic;
+ 
+}
+.next_course{
+  
+  
+ 
+
+}
+.cleartest{
+
 }
 .header_top > h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -39,6 +49,8 @@ a {
   color: red;
 }
 .fav_movies {
+ display: inline;
+ clear:both;
 }
 img {
   width: 100px;
