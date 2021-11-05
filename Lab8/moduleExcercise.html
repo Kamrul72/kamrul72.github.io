@@ -167,9 +167,9 @@
                 var make_adder = function(inc){
                                 let counter = 0;
                                 return function(){
-                                    counter +=inc;
+                                   return counter +=inc;
                                           
-                                        }
+                                        };
                             };
                    var add5= make_adder(5);
                    add5();
