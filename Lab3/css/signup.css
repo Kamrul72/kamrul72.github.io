@@ -19,6 +19,7 @@ legend
     width: 150px;
     padding: 2px 0 0 10px;
     font-size: 15px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 input[type="submit"]
