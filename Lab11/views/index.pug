@@ -1,0 +1,12 @@
+
+doctype html
+head
+  meta(charset='utf-8')
+  title Calculator Web Site
+h1 The Number Quiz
+h3 your current score is :#{score}
+h2  Guess the number sequence is :#{num}
+form(action='http://localhost:8080/validation.js')
+  label your answer is
+  input(type='text' name='ansID')
+  button Submit
