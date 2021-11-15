@@ -12,6 +12,7 @@ app.get('/',function(req,res){
        
         count=0;
         score=0;
+ 
         num= database[count];
 
         res.render('index',{count:count,score:score,num:num});
@@ -24,19 +25,21 @@ app.get('/',function(req,res){
         console.log(score + "score");
         var q = url.parse(req.url, true);
 
-       if (count>=5){  res.render('result',{count:count,score:score});  }
-
+       if (count==5){  res.render('result',{count:count,score:score}); return res.end(); }
+        
         if (ansCheck.check(count, q.query)) {
             score++;
                   }
+                 
        
-        if (count<5) {count++;
+        if (count<5) {
+            count++;
             console.log(count);
             num= database[count];
             res.render('index',{count:count,score:score,num:num});
         }
           
-
+       
                 
 
 
