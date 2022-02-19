@@ -1,4 +1,4 @@
 myDate = function () {
     return Date();
 };
-exports.myDate = myDate;
+exports.sahir = myDate;

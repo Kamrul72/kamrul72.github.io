@@ -1,0 +1,36 @@
+.mrgn_btm_50{
+    margin-bottom: 50px;
+}
+.mrgn_top_50{
+    margin-top: 50px;
+}
+.list ol{
+    padding: 0px;
+    margin: 0px;
+}
+.list ol li{
+    padding: 10px 0px 10px 35px;
+    counter-increment: list;
+    list-style-type: none;
+    position: relative;
+    background-color: #f5f5f5;
+    margin-bottom: 1px;
+}
+
+.list ol li:before{
+    color: #73a253;
+    content: counter(list) ")";
+    left: 0px;
+    position: absolute;
+    text-align: right;
+    width: 26px;
+    font-weight: bold;
+}
+
+.bg{
+    background:no-repeat center/150% url(../img/bg.jpg) ;
+}
+
+.color-white{
+    color: #fff;
+}
