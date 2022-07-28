@@ -1,0 +1,46 @@
+
+<div style ="font-size:20 ; font-weight:bold" >Search Loan Form: </div>
+
+ <div class="alert alert-danger col-sm-10" *ngIf="notFound">
+  <strong>{{notFound}} !!</strong>
+</div>
+<ul > 
+    <li *ngFor="let loan of loans">{{loan.details}}</li> 
+    </ul> 
+
+
+<div class="col-sm-8">
+    <form [formGroup]="searchForm">
+      <div class="form-group">
+        <label for="firstName"   style="font-weight:bold">  First Name   :     </label>
+        <input formControlName="fName" type="text" class="form-control" id="firstName1" aria-describedby="FirstNameHelp" placeholder="Enter FirstName">
+        <div *ngIf="!searchForm.get('fName')?.valid && searchForm.get('fName')?.touched" style="color:red">
+          First Name is required
+        </div>
+       </div>
+      <p> </p>
+       <div class="form-group">
+        <label for="lastName"  style="font-weight:bold">  Last Name    :     </label>
+        <input formControlName="lName" type="text" class="form-control" id="lastName2" aria-describedby="LastNameHelp" placeholder="Enter LastName">
+        <div *ngIf="!searchForm.get('lName')?.valid && searchForm.get('lName')?.touched" style="color:red">
+          Last Name is required
+        </div>
+       </div>
+       <p> </p>
+      <div class="form-group">
+        <label for="loanNumber"  style="font-weight:bold">Loan Number : </label>
+        <input formControlName="loanNum" type="text" class="form-control" id="LoanNumberInput" aria-describedby="loanNumberHelp" placeholder="Enter Loan Number">
+        <div *ngIf="!searchForm.get('loanNum')?.valid && searchForm.get('loanNum')?.touched" style="color:red">
+          Invalid loanNumber
+        </div>
+      </div>
+      <p> </p>
+       <div></div>   
+       <div></div>
+      <div class="form-group" style="text-align:left;">
+          <button type="button" class="btn btn-primary"  style="font-weight:bold" [disabled]="!searchForm.valid" (click)="search()">Search Loan</button>
+          <button type="button" class="btn btn-success"  style="font-weight:bold" (click)="moveToAddLoan()">Add Loan</button>
+          <button type="button" class="btn btn-success"   style="font-weight:bold" (click)="logout()">Logout</button>
+      </div>
+    </form>
+  </div>

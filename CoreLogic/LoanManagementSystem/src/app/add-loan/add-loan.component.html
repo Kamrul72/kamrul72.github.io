@@ -1,0 +1,54 @@
+<div style ="font-size:20 ; font-weight:bold" >Add Loan Form: </div>
+
+<div class="col-sm-6 text-center">
+    <div class="alert alert-success col-sm-10" *ngIf="successfullyLoanAdded;else failmessage">
+      <strong>{{successfullyLoanAdded}} !!</strong>
+    </div>
+    <ng-template #failmessage>
+      <div class="alert alert-danger"  *ngIf="errorAddingLoan">
+        <strong>{{errorAddingLoan}} !!</strong>
+      </div>
+    </ng-template>
+   </div>
+<p></p>
+<div class="col-sm-8">
+    <form [formGroup]="addLoanForm">
+      <div class="form-group">
+        <label for="firstName"    style="font-weight:bold" >First Name :  </label>
+        <input formControlName="fName" type="text" class="form-control" id="firstName1" aria-describedby="FirstNameHelp" placeholder="Enter FirstName">
+        <div *ngIf="!addLoanForm.get('fName')?.valid && addLoanForm.get('fName')?.touched" style="color:red">
+          First Name is required
+        </div>
+       </div>
+       <p></p>
+       <div class="form-group">
+        <label for="lastName" style="font-weight:bold" >Lamst Name :  </label>
+        <input formControlName="lName" type="text" class="form-control" id="lastName2" aria-describedby="LastNameHelp" placeholder="Enter LastName">
+        <div *ngIf="!addLoanForm.get('lName')?.valid && addLoanForm.get('lName')?.touched" style="color:red">
+          Last Name is required
+        </div>
+       </div>
+       <p></p>
+      <div class="form-group">
+        <label for="loanNumber" style="font-weight:bold" >Loan Number : </label>
+        <input formControlName="loanNum" type="text" class="form-control" id="LoanNumberInput" aria-describedby="loanNumberHelp" placeholder="Enter Loan Number">
+        <div *ngIf="!addLoanForm.get('loanNum')?.valid && addLoanForm.get('loanNum')?.touched" style="color:red">
+          Invalid loanNumber
+        </div>
+      </div>
+      <p></p>
+      <div class="form-group">
+        <label for="propertyAddress" style="font-weight:bold" > Property  Address : </label>
+        <input formControlName="propertyAdd" type="text" class="form-control" id="PropertAddressInput" aria-describedby="PropertyAddressHelp" placeholder="Enter Property Address">
+        <div *ngIf="!addLoanForm.get('propertyAdd')?.valid && addLoanForm.get('propertyAdd')?.touched" style="color:red">
+          Invalid Property Address
+        </div>
+      </div>
+      <p></p>
+      <div class="form-group" style="text-align:left;">
+          <button type="button" class="btn btn-primary"  style="font-weight:bold" [disabled]="!addLoanForm.valid" (click)="addLoan()">Add Loan</button>
+          <button type="button" class="btn btn-success"  style="font-weight:bold" (click)="moveToSearchLoan()">Search Loan</button>
+          <button type="button" class="btn btn-success"  style="font-weight:bold" (click)="logout()">Logout</button>
+      </div>
+    </form>
+  </div>
