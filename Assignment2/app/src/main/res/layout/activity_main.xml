@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:padding="20dp"
+
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        app:srcCompat="@drawable/dd_logo"
+        tools:ignore="SpeakableTextPresentCheck"
+
+        android:contentDescription="TODO" />
+
+    <Space android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+
+    <TextView
+        android:id="@+id/foodView"
+        android:layout_width="600dp"
+        android:layout_height="125dp"
+        android:text="               HumBurger"
+        android:textSize="30sp" />
+
+    <Space
+        android:layout_width="600dp"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/newFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:paddingLeft="100dp"
+        android:textSize="25sp"
+        android:textFontWeight="@integer/material_motion_duration_long_1"
+        android:inputType="textPersonName"
+        android:text="Add new food ....." />
+
+    <Button
+        android:id="@+id/addFoodBtn"
+        android:layout_width="279dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="50dp"
+        android:text="Add Food"
+        android:textSize="25sp" />
+
+    <Space android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="359dp"
+        android:layout_height="87dp"
+        android:text="Decide!"
+        android:onClick="clickOnDecide"
+        android:textSize="25sp" />
+
+
+</LinearLayout>
