@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/table_Layoutid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TableRow android:padding="10dp">
+
+        <EditText
+            android:id="@+id/version"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:padding="5dp"
+            android:text="Enter Android Version"
+            />
+
+
+
+    </TableRow>
+    <TableRow android:padding="10dp">
+
+        <EditText
+            android:id="@+id/code_name"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:padding="5dp"
+            android:text="Enter Android Code Name"
+            />
+    </TableRow>
+
+
+    <TableRow android:layout_width="wrap_content" android:paddingLeft="30dp">
+        <Button
+            android:id="@+id/add_button"
+            android:text="Add"
+            android:textSize="20sp"
+            android:paddingLeft="30dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+    </TableRow>
+
+
+
+    <TableRow android:padding="5dp" >
+        <TextView
+            android:layout_height="25dp"
+            android:layout_width="75dp"
+            android:text="Version"
+            android:typeface="serif"
+            android:background="@color/purple_200"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_height="25dp"
+            android:layout_width="300dp"
+            android:background="@color/purple_200"
+            android:text="Code Name"
+            android:typeface="serif"
+            android:textSize="20sp" />
+
+    </TableRow>
+
+    <TableRow android:padding="5dp" >
+        <TextView
+            android:layout_height="25dp"
+            android:layout_width="75dp"
+            android:text="Android 9.0"
+            android:typeface="serif"
+            android:background="@color/purple_200"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_height="25dp"
+            android:layout_width="300dp"
+            android:background="@color/purple_200"
+            android:text="Pie"
+            android:typeface="serif"
+            android:textSize="20sp" />
+
+    </TableRow>
+    <TableRow android:padding="5dp" >
+        <TextView
+            android:layout_height="25dp"
+            android:layout_width="75dp"
+            android:text="Android 8.0"
+            android:typeface="serif"
+            android:background="@color/purple_200"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_height="25dp"
+            android:layout_width="300dp"
+            android:background="@color/purple_200"
+            android:text="Oreo"
+            android:typeface="serif"
+            android:textSize="20sp" />
+
+    </TableRow>
+
+
+</TableLayout>
