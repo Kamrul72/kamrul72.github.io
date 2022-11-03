@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Assignment05Prob02</string>
+
+    <string-array name="electronics">
+        <item>Television</item>
+        <item>Microwoven</item>
+        <item>Laptop</item>
+          </string-array>
+    <string-array name="beauties">
+        <item>Soap</item>
+        <item>Lip stick</item>
+        <item>Perfume</item>
+    </string-array>
+    <string-array name="cloths">
+        <item>Shirt</item>
+        <item>Pant</item>
+        <item>Truser</item>
+    </string-array>
+    <string-array name="foods">
+        <item>Doosa</item>
+        <item>Kabab</item>
+        <item>Birany</item>
+    </string-array>
+
+
+</resources>
