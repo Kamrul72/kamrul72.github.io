@@ -1,0 +1,220 @@
+INFO  [2023-06-10 04:19:23,571] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2023-06-10 04:19:23,574] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2023-06-10 04:19:23,574] io.dropwizard.server.ServerFactory: Starting Hilton
+INFO  [2023-06-10 04:19:23,636] org.eclipse.jetty.setuid.SetUIDListener: Opened application@6872f9c8{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2023-06-10 04:19:23,637] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@6d2d99fc{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2023-06-10 04:19:23,638] org.eclipse.jetty.server.Server: jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 15.0.2+7-27
+INFO  [2023-06-10 04:19:23,973] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    NONE
+
+INFO  [2023-06-10 04:19:23,974] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1d1cbd0f{/,null,AVAILABLE}
+INFO  [2023-06-10 04:19:23,979] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2023-06-10 04:19:23,979] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2023-06-10 04:19:23,983] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@d613308{/,null,AVAILABLE}
+INFO  [2023-06-10 04:19:24,067] org.eclipse.jetty.server.AbstractConnector: Started application@6872f9c8{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2023-06-10 04:19:24,072] org.eclipse.jetty.server.AbstractConnector: Started admin@6d2d99fc{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2023-06-10 04:19:24,072] org.eclipse.jetty.server.Server: Started @3547ms
+INFO  [2023-06-10 04:32:50,593] org.eclipse.jetty.server.AbstractConnector: Stopped application@6872f9c8{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2023-06-10 04:32:50,595] org.eclipse.jetty.server.AbstractConnector: Stopped admin@6d2d99fc{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2023-06-10 04:32:50,596] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@d613308{/,null,UNAVAILABLE}
+INFO  [2023-06-10 04:32:50,601] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1d1cbd0f{/,null,UNAVAILABLE}
+INFO  [2023-06-10 04:35:10,146] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2023-06-10 04:35:10,148] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2023-06-10 04:35:10,222] org.hibernate.Version: HHH000412: Hibernate Core {1.0-SNAPSHOT}
+INFO  [2023-06-10 04:35:10,297] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [org.example.domain.GeoLocation]
+INFO  [2023-06-10 04:35:10,311] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+INFO  [2023-06-10 04:35:10,956] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+INFO  [2023-06-10 04:35:11,603] io.dropwizard.server.ServerFactory: Starting Hilton
+INFO  [2023-06-10 04:35:11,678] org.eclipse.jetty.setuid.SetUIDListener: Opened application@50b4364{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2023-06-10 04:35:11,678] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@5e541ef9{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2023-06-10 04:35:11,679] org.eclipse.jetty.server.Server: jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 15.0.2+7-27
+INFO  [2023-06-10 04:35:12,066] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /geolocation/{ipAddress} (org.example.controller.GeoLocationController)
+
+INFO  [2023-06-10 04:35:12,068] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@52efb338{/,null,AVAILABLE}
+INFO  [2023-06-10 04:35:12,072] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2023-06-10 04:35:12,077] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@25110bb9{/,null,AVAILABLE}
+INFO  [2023-06-10 04:35:12,099] org.eclipse.jetty.server.AbstractConnector: Started application@50b4364{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2023-06-10 04:35:12,107] org.eclipse.jetty.server.AbstractConnector: Started admin@5e541ef9{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2023-06-10 04:35:12,107] org.eclipse.jetty.server.Server: Started @5036ms
+INFO  [2023-06-10 04:35:17,142] org.example.service.GeoLocationService: Ip address Searching in Database: 24.48.0.2
+INFO  [2023-06-10 04:35:17,142] org.example.service.GeoLocationService: Database is called to search Ip address: 24.48.0.2
+INFO  [2023-06-10 04:35:17,167] org.example.service.GeoLocationService: Record found in database
+INFO  [2023-06-10 04:35:17,173] org.example.service.GeoLocationService: Refreshing data in 5 minutes by calling external API
+INFO  [2023-06-10 04:35:17,383] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    44500 nanoseconds spent acquiring 1 JDBC connections;
+    33700 nanoseconds spent releasing 1 JDBC connections;
+    6154399 nanoseconds spent preparing 1 JDBC statements;
+    1422400 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+ERROR [2023-06-10 04:35:17,385] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: 37a6bdd43878a295
+! java.lang.NullPointerException: Cannot invoke "org.modelmapper.ModelMapper.map(Object, java.lang.Class)" because "this.modelMaper" is null
+! at org.example.service.GeoLocationServiceImpl.getGeoDataFromAPI(GeoLocationServiceImpl.java:38)
+! at org.example.controller.GeoLocationController.getGeoLocationFromAPI(GeoLocationController.java:59)
+! at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+! at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+! at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+! at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:219)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+! at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+! at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+! at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+! at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+! at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+! at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:50)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1617)
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:35)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1604)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:47)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:41)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1604)
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+! at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+! at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+! at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:249)
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:52)
+! at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:767)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:54)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+! at org.eclipse.jetty.server.Server.handle(Server.java:500)
+! at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+! at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+! at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+! at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+! at java.base/java.lang.Thread.run(Thread.java:832)
+INFO  [2023-06-10 04:37:14,663] org.example.service.GeoLocationService: Ip address Searching in Database: 24.48.0.10
+INFO  [2023-06-10 04:37:14,663] org.example.service.GeoLocationService: Database is called to search Ip address: 24.48.0.10
+INFO  [2023-06-10 04:37:14,665] org.example.service.GeoLocationService: Record not found in database: need to call external API
+INFO  [2023-06-10 04:37:14,665] org.example.service.GeoLocationService: External API is called to search IP address: 24.48.0.10
+INFO  [2023-06-10 04:37:14,835] org.example.service.GeoLocationService: save geolocation data in database with ip address: 24.48.0.10
+INFO  [2023-06-10 04:37:14,844] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    38101 nanoseconds spent acquiring 1 JDBC connections;
+    35700 nanoseconds spent releasing 1 JDBC connections;
+    740001 nanoseconds spent preparing 2 JDBC statements;
+    1513800 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+ERROR [2023-06-10 04:37:14,844] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: d0d393d4993a86c7
+! java.lang.NullPointerException: Cannot invoke "org.modelmapper.ModelMapper.map(Object, java.lang.Class)" because "this.modelMaper" is null
+! at org.example.service.GeoLocationServiceImpl.getGeoDataFromAPI(GeoLocationServiceImpl.java:46)
+! at org.example.controller.GeoLocationController.getGeoLocationFromAPI(GeoLocationController.java:59)
+! at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+! at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+! at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+! at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:219)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+! at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+! at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+! at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+! at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+! at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+! at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:50)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1617)
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:35)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1604)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:47)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:41)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1604)
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+! at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+! at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+! at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:249)
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:52)
+! at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:767)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:54)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+! at org.eclipse.jetty.server.Server.handle(Server.java:500)
+! at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+! at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+! at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+! at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+! at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+! at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+! at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+! at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:135)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+! at java.base/java.lang.Thread.run(Thread.java:832)
